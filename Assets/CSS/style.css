@@ -24,7 +24,7 @@ header {
   justify-content: space-between;
   padding: 32px 15%;
   background: transparent;
-  transition: all ease 45s;
+  transition: all ease 0.4s;
 }
 
 .navigationbar {
@@ -35,12 +35,12 @@ header {
   font-weight: 500;
   color: var(--text-color);
   margin: 0 10px;
-  transition: all ease 50s;
+  transition: all ease 0.2s;
 }
 .navigationbar a:hover {
   color: var(--text-color);
   margin: 0 10px;
-  transition: all ease 50s;
+  transition: all ease 0.4s;
 }
 ul.navigationbar {
   list-style: none;
@@ -70,7 +70,7 @@ ul.navigationbar {
 }
 .menu-btn {
   background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
-  box-shadow: 0px 20px 40px #00000070;
+  box-shadow: 0px 20px 20px #00000025;
   border: 1px solid #3b3b3b;
   padding: 10px 20px;
   color: #ffffff;
@@ -113,7 +113,7 @@ section {
 .home-text span {
   padding: 5px 25px;
   background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
-  box-shadow: 0px 20px 40px #00000070;
+  box-shadow: 0px 20px 40px #00000025;
   border: 1px solid #3b3b3b;
   padding: 10px 20px;
   color: #ffffff;
@@ -148,7 +148,7 @@ section {
   font-size: 16px;
   font-weight: 400;
   border-radius: 100px;
-  transition: all 0.6s rase-in-out;
+  transition: all 0.4s rase-in-out;
   margin: 30px;
   text-decoration: none;
 }
@@ -161,9 +161,9 @@ section {
 .navigationbar li a {
   text-decoration: none;
 }
-@media (max-width: 850px) {
+@media (max-width: 800px) {
   .navigationbar {
-    position: absolute;
+    position: static;
     width: 100%;
     height: 100 vh;
     padding: 40 px 50px;
@@ -178,4 +178,49 @@ section {
 }
 .navigationbar a {
   display: block;
+}
+@media (max-width: 800px) {
+  .home-img {
+    position: fixed;
+    width: 100%;
+    height: 100 vh;
+    padding: 40 px 50px;
+    top: 150px;
+    left: 300px;
+    right: 450px;
+    bottom: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease-in-out;
+  }
+}
+@media (max-width: 800px) {
+  .home-text p {
+    position: -ms-page;
+    width: 100%;
+    height: 100 vh;
+    padding: 40 px 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease-in-out;
+  }
+}
+@media (max-width: 800px) {
+  .menu-btn {
+    position: -ms-page;
+    width: 20%;
+    height: 20 vh;
+    padding: 40 px 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease-in-out;
+  }
 }
