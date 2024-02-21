@@ -6,19 +6,20 @@
     <title>My Portfolio</title>
     <script>function rediriger(){
       window.location.href="Page/about.html";
+    }function contact(){
+      window.location.href="Page/contact.html"
     }
-    </script>
-    <link rel="stylesheet" href="./Assets/CSS/style.css" />
     
-
-    <!--Boxicons link-->
+    </script>
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />   
+    <link rel="stylesheet" href="./Assets/bootstrap-5.3.2-dist/css/bootstrap.css">
+    
 
     <link
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
-
-    <!--googlefonts link-->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,36 +28,44 @@
     />
   </head>
   <body>
-    <header>
-      <a href="#" class="logo" class="active"><span>H</span>ome</a>
+    <div class="d-flex flex-column min-vh-100">
+    
+     <header>
+      <a href="#" class="logo" class="active"><span>Ingenieur en Informatique</span></a>
       <ul class="navigationbar">        
-        <li><a href="#formation">formations</a></li>
+        <li><a href="#projet">projets</a></li>
         <li><a href="#competences">compétences</a></li>
-        <li><a href="#experiences">experiences</a></li>
-        <li><a href="#contact">contacts</a></li>
+        <li><a href="#cusrus">cursus</a></li>
+        <li><a href="#contact" onclick="contact()">contacts</a></li>
       </ul>
+     
 
-      <div class="menu-btn">
+       <div class="menu-btn">
         <span onclick="rediriger()"> INTRO</span>
-        <div class="bx bx-menu" id="menu-icon"></div>
-      </div>
-    </header>
-    <section class="home">
+        <div class="bx bx-menu" id="menu-icon">
+          
+        </div>
+      </div> 
+      </header>
+     <section class="home">
       <div class="home-text">
-        <span>Ingenieur en Informatique</span>
+        
         <h3>RAKOTOARISOA Nasandratriniana</h3>
         <p><ul>
-          <li>Administrateur réseau et système.</li>
-          <li>Concepteur Developpeur d'Application numérique.</li>
+          <li>Administrateur réseau et système</li>
+          <li>Concepteur Developpeur d'Application numérique</li>
         </ul>
         </p>
         <div class="main-btn">
-          <a href="#" class="btn">Téléchager mon CV</a>
+          <button class="btn">Téléchager mon CV</button>
         </div>
       </div>
+    
       <div class="home-img">
         <img src="./Assets/images/nasandratra.png" alt="" />
       </div>
-    </section>    
+      </section>
+    </div>
+       
   </body>
 </html>
